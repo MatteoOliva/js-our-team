@@ -44,5 +44,23 @@ for(let persone of team) {
 }
 
 // Milestone 2
+
 // - assegnare una variabile e creare un elemento HTML <ul>
+
+// const teamElement = document.getElementById('team');
+// const uLista = teamElement.appendChild(document.createElement("ul"));
+let uLista = document.getElementById("team");
+
+
+
 // - aggiungere alla <ul> gli elementi <LI> contententi ciascuno un oggetto dell' array
+for (let persone of team) {
+    
+    uLista.innerHTML += `<br><li>NOME:<br>${persone.name}<br><br>ROLE:<br>${persone.role}<br><br>IMMAGINE:<br>${persone.image}</li>`
+
+
+    
+    
+    
+} 
+
